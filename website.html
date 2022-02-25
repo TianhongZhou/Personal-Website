@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tianhong Zhou's Personal Website</title>
+        <link rel="stylesheet" type="text/css" href="website.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">TZ</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#sec">About</a></li>
+                <li><a href="#cont">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="background.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="tower.png" id="behind">
+            <h2 id="text">Tianhong Zhou</h2>
+            <img src="front.png" id="front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Tianhong Zhou</h2>
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming Language: <br>Java, C, C++, Python, R, MATLAB, Julia, Pluto notebook</li>
+                <li>Software design</li>
+                <li>Problem resolution</li>
+                <li>Report writing skills</li>
+                <li>Advanced math</li>
+            </ul>
+            <h3>Education and Training</h3>
+            <h4>University of British Columbia - Vancouver, BC | Bachelor of Science</h4>
+            <ul2>
+                <li>Computer Science, Expected in 04/2024</li>
+                <li>90.2% in relevant courses</li>
+                <li>Dean's List (2020-2021)</li>
+            </ul2>
+            <h4>Relevant Courses</h4>
+            <ul>
+                <li>Calculus</li>
+                <li>Matrix Algebra</li>
+                <li>Elementary Statistics</li>
+                <li>Computation, Programs, and Programming</li>
+                <li>Models of Computation</li>
+                <li>Programming, Problem Solving, and Algorithms</li>
+                <li>Software Construction</li>
+                <li>Introduction to Computer Systems</li>
+                <li>Basic Algorithms and Data Structures</li>
+                <li>Numerical Computation for Algebraic Problems</li>
+                <li>Computational Optimization</li>
+            </ul>
+            <h5>Coursera</h5>
+            <ul2>
+                <li>Learn to Program: The Fundamentals | University of Toronto, 05/2018</li>
+                <li>Machine Learning | Stanford University, in process</li>
+            </ul2>
+            <h3>Projects</h3>
+            <h4>New Game of Life, 12/2021</h4>
+            <ul2>
+                <li>Personal academic project</li>
+                <li>An App developed using Java based on Conway's Game of Life</li>
+                <li><a href="https://github.com/TianhongZhou/CPSC-210-Individual-Project">Github Link</a></li>
+            </ul2>
+            <h4>Maze, In progress</h4>
+            <ul2>
+                <li>Personal project, Collaborated with Yueren Zhang</li>
+                <li>A maze game developed using Unity</li>
+                <li><a href="">Github Link</a></li>
+            </ul2>
+            <h3>Internship Experience</h3>
+            <h4>MARKETING ASSISTANT | 07/2020 - 08/2020</h4>
+            <h4>Shanghai Zhihuo Information Technology Co., LTD - Shanghai, China</h4>
+            <ul2>
+                <li>Updated web pages and social media profiles to reflect proactive strategies and engage customers.</li>
+                <li>Translated official websites and articles to capture various customers.</li>
+                <li>Managed complete database of all files, contacts, and project materials.</li>
+                <li>Researched on the market and peers to get information of how to improve our service better.</li>
+                <li>Edited and wrote articles that need to be used on the official website.</li>
+                <li>Planned and designed the product pages.</li>
+            </ul2>
+            <h3>Research Experience</h3>
+            <h4>Deep Learning for Pattern Recognition, Start later</h4>
+            <ul2>
+                <li>Lead by Bjorn Schuller (Professor of Artificial Intelligence of Imperial College London)</li>
+                <li>Will start from 05/2022</li>
+            </ul2>
+            <h3>Certifications</h3>
+            <ul2>
+                <li>36th Odyssey of the Mind 2nd place in China (2015)</li>
+                <li>Waterloo Cayley Contest Student Honor Roll (2018)</li>
+                <li>Waterloo Euclid Contest Student Honor Roll (2020)</li>
+            </ul2>
+            <h3 id="cont">Contact</h3>
+            <ul>
+                <li>Email: teozhou1215@gmail.com</li>
+                <li>Phone: +1 (236) 966-5539</li>
+                <li><a href="https://github.com/TianhongZhou">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/tianhong-zhou-b559aa159/">Linkedin</a></li>
+            </ul>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let behind = document.getElementById('behind');
+            let text = document.getElementById('text');
+            let front = document.getElementById('front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.1 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                behind.style.top = value * 0.5 + 'px';
+                front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 2 + 'px';
+                text.style.marginTop = value * 0.4 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
